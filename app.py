@@ -26,6 +26,14 @@ from benchmark import estimate_cost, generate_benchmark_questions, run_benchmark
 
 load_dotenv()
 
+# Bridge Streamlit Cloud secrets → environment variables (for deployment)
+try:
+    for key, value in st.secrets.items():
+        if isinstance(value, str):
+            os.environ.setdefault(key, value)
+except Exception:
+    pass  # No st.secrets available (local dev with .env)
+
 # ── Page config ──────────────────────────────────────────────────────────────
 st.set_page_config(
     page_title="RAG Showdown: Vector vs Vectorless vs Hybrid",
