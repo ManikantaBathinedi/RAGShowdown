@@ -12,6 +12,28 @@ A hands-on, side-by-side comparison of **3 RAG (Retrieval-Augmented Generation) 
 
 ---
 
+## Screenshots
+
+### Homepage — Document Analysis & Recommendation
+![Homepage](Screenshots/homepage.png)
+
+### Live Winner — Per-Query Scoring
+![Winner](Screenshots/winner%20after%20query.png)
+
+### Side-by-Side Query Results
+![Query Results](Screenshots/single%20query%20response.png)
+
+### Document Visualization — Vector RAG Chunks
+![Vector Visual](Screenshots/vector%20rag%20visual.png)
+
+### Document Visualization — Vectorless RAG Heading Tree
+![Vectorless Visual](Screenshots/vectorless%20visual.png)
+
+### Benchmark Mode — Multi-Query Comparison & Cost Projection
+![Benchmark](Screenshots/benchmark%20resutls.png)
+
+---
+
 ## What This Demo Shows
 
 | Approach | How It Retrieves | Key Idea |
